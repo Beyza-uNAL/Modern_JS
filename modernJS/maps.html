@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const ogrenciler = new Map();
+        
+        ogrenciler.set(1, "ali yılmaz");
+        ogrenciler.set("12312344", "efe yaz");
+        ogrenciler.set(true, "ali can");
+
+        console.log(ogrenciler.get(1));
+        console.log(ogrenciler.get(true));
+
+        let sonuc;
+        sonuc= ogrenciler.size;
+        sonuc= ogrenciler.has(1);//key bilgisini giriyoruz
+        // ogrenciler.delete(1);
+        // ogrenciler.clear();
+        for(let x of ogrenciler.keys()) {
+            console.log(x);
+        }
+        for(let x of ogrenciler.values()) {
+            console.log(x);
+        }
+        for(let [key,value] of ogrenciler.entries()) {
+            console.log(key,value);
+        }
+
+
+
+       
+
+
+
+
+
+    </script>
+</body>
+</html>
